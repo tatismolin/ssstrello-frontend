@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>Ssstrello</title>
+</head>
+<body>
+    <nav class="navDiv"></nav>
+    <div class="planDiv"></div>
+    <div class="listDiv"></div>
+    
+    <form class="addTaskForm">
+        <h1 class="addTaskFormTitle">Add a new task</h1>
+        
+        <label class="addTaskFormLabelName">Name</label>
+        <input class="addTaskFormInputName" type="text" placeholder="Task name">
+        
+        <label class="addTaskFormLabelName">Priority</label>
+        <select class="addTaskFormInputPriority">
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+        </select>
+        
+        <button type="submit" class="addTaskFormAddButton">Add</button>
+        <button type="submit" class="addTaskFormCloseButton">✖️</button>
+    </form>
+
+    <form class="addListForm">
+        <h1 class="addListFormTitle">Add a new list</h1>
+        
+        <label class="addListFormLabelName">Name</label>
+        <input class="addListFormInputName" type="text" placeholder="List name">
+        
+        <button type="submit" class="addListFormAddButton">Add</button>
+        <button type="submit" class="addListFormCloseButton">✖️</button>
+    </form>
+
+    <footer class="footDiv">
+        <img class="tapMe" src="https://media3.giphy.com/media/dCERkihZ9m7xjIvSau/source.gif" alt="Click Me">
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
