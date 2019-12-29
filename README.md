@@ -36,7 +36,7 @@ Each Task has a name, that can be edited inline and priority, that is displayed 
 - [ ] multiple users;
 - [ ] multiple plans;
 - [ ] plans shared between users;
-- [ ] ability to create new lists;
+- [x] ability to create new lists;
 - [ ] search functionality;
 - [ ] filter functionality.
 
