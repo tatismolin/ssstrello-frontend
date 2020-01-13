@@ -5,7 +5,7 @@
 
 Ssstrello is a clone of a popular task management tool, Trello. It has lists and tasks organized by projects. Each project has multiple lists, for example, "To Do", "In Progress", "Done". Each list has multiple tasks. Tasks can be dragged and dropped between lists and edited inline. Ssstrello has full CRUD on lists and tasks. Written in JavaScript/HTML/CSS on a Frontend and Ruby on Rails on a backend.
 
-![background](./pictures/ssstrello.gif)
+![background](./pictures/ssstrello_gif.gif)
 
 **Demo:** [YouTube]()
 
