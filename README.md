@@ -7,7 +7,7 @@ Ssstrello is a clone of a popular task management tool, Trello. It has lists and
 
 ![background](./pictures/ssstrello_gif.gif)
 
-**Demo:** [YouTube]()
+**Demo:** [YouTube](https://www.youtube.com/watch?v=rGMg7X-mi8I)
 
 **Stack:**
 > - Ruby on Rails;
