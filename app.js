@@ -57,7 +57,7 @@ function addLists(plan){
         const addNewTaskDiv = document.createElement("button");
         const listDeleteButton = document.createElement("button");
 
-        listNav.classList.add("list-nav")
+        listNav.classList.add("listNav")
         listCard.classList.add("listCard");
         listName.classList.add("listName");
         addNewTaskDiv.classList.add("addNewTaskDiv");
@@ -251,7 +251,7 @@ function addNewList() {
     listDiv.append(listCard);
 
     addNewListFetch(addListFormInputName);
-}
+};
 
 function addNewListFetch(addListFormInputName){
     fetch("http://localhost:3000/lists/", {
@@ -262,7 +262,7 @@ function addNewListFetch(addListFormInputName){
         },
         body: JSON.stringify({
             name: addListFormInputName.value,
-            plan_id: 2
+            plan_id: 1
         })
     });
 };
@@ -319,33 +319,33 @@ function addNewTaskFetch(addTaskFormInputName, addTaskFormInputPriority){
 };
 
 //external API functionality.    
-const tapMe = document.querySelector(".tapMe");
+// const tapMe = document.querySelector(".tapMe");
 
-tapMe.addEventListener("click", addExternalApiFetch);
+// tapMe.addEventListener("click", addExternalApiFetch);
 
-function addExternalApiFetch(){
-    event.preventDefault();
-    fetch("https://hargrimm-wikihow-v1.p.rapidapi.com/steps?count=3", {
-        "method": "GET",
-        "headers": {
-            "x-rapidapi-host": "hargrimm-wikihow-v1.p.rapidapi.com",
-            "x-rapidapi-key": "c5d7d7387bmshc602216bb13e357p1052bcjsn2580862765fa"
-        }
-    })
-    .then(response => response.json())
-    .then(result => {
-        const randomQuote = document.createElement("h1");
+// function addExternalApiFetch(){
+//     event.preventDefault();
+//     fetch("https://hargrimm-wikihow-v1.p.rapidapi.com/steps?count=3", {
+//         "method": "GET",
+//         "headers": {
+//             "x-rapidapi-host": "hargrimm-wikihow-v1.p.rapidapi.com",
+//             "x-rapidapi-key": "c5d7d7387bmshc602216bb13e357p1052bcjsn2580862765fa"
+//         }
+//     })
+//     .then(response => response.json())
+//     .then(result => {
+//         const randomQuote = document.createElement("h1");
 
-        randomQuote.classList.add("randomQuote");
-        footDiv.classList.add("dimmer");
+//         randomQuote.classList.add("randomQuote");
+//         footDiv.classList.add("dimmer");
         
-        randomQuote.innerText = result[1];
+//         randomQuote.innerText = result[1];
     
-        randomQuote.style.display = "flex";
+//         randomQuote.style.display = "flex";
     
-        footDiv.prepend(randomQuote);
-    })
-};
+//         footDiv.prepend(randomQuote);
+//     })
+// };
 
 //events deligation.
 listDiv.addEventListener("click", handleClick);
@@ -381,3 +381,27 @@ function deleteList(listCard){
     });
     listCard.remove();
 };
+
+//signup/login functionality.
+// const signupForm = document.querySelector(".signupForm");
+
+// signupForm.addEventListener("submit", (event) => {
+//     event.preventDefault();
+//     const formData = new FormData(event.target)
+//     fetch("http://localhost:3000/users", {
+//         method: "POST",
+//         headers: {
+//             "Content_Type": "application/json"
+//         },
+//         body: JSON.stringify({
+//             username: formData.get("username"),
+//             password: formData.get("password")
+//         })
+//     })
+//     .then(response => {
+//         if(response.status >= 400){
+//             throw new Error("Bad request")
+//         }
+//     })
+//     .catch(error => console.error(error))
+// });

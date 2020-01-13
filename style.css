@@ -3,7 +3,7 @@
 }
 
 body { 
-    background: url("mountains.jpg") center fixed no-repeat; 
+    background: url("./pictures/background.jpg") center fixed no-repeat; 
     background-size: 100% 100%;
 }
 
@@ -66,7 +66,7 @@ body {
     margin-top: 4px;
 }
 
-.list-nav {
+.listNav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -239,11 +239,11 @@ body {
     right: 10px;
 }
 
-.tapMe {
+/* .tapMe {
     width: 10%;
-}
+} */
 
-.randomQuote {
+/* .randomQuote {
     font-family: 'Indie Flower', cursive;
     color: white;
     font-size: 38px;
@@ -253,7 +253,7 @@ body {
     margin-top: 6px;
     margin-bottom: 6px;
     margin-left: 26px;
-}
+} */
 
 .footDiv {
     margin-bottom: -10px;
@@ -269,7 +269,6 @@ body {
     outline: 9999px solid rgba(0, 0, 0, 0.692);
     background-color: rgba(0, 0, 0, 0.692);;
 }
-
 
 .addListForm {
     box-sizing: border-box;
@@ -312,7 +311,6 @@ body {
 .addListFormInputName:hover {
     background-color:  rgba(255, 255, 255, 0.685)
 }
-
 
 .addListFormLabelName {
     padding: 12px 12px 12px 0;
